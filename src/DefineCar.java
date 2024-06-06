@@ -1,11 +1,11 @@
 public class DefineCar {
-	private int eSize;
-	private String licPlate;
-	private String make;
-	private String model;
+	private final int engSize;
+	private final String licPlate;
+	private final String make;
+	private final String model;
 	
-	public DefineCar(int eSize, String licPlate, String make, String model) {
-		this.eSize = eSize;
+	public DefineCar(int engSize, String licPlate, String make, String model) {
+		this.engSize = engSize;
 		this.licPlate = licPlate;
 		this.make = make;
 		this.model = model;
@@ -14,7 +14,7 @@ public class DefineCar {
 	@Override
 	public String toString() {
 		return
-				"Cilindrata: " + eSize +" cc "+
+				"Cilindrata: " + engSize +" cc "+
 				", Targa: '" + licPlate + '\'' +
 				", Costruttore: '" + make + '\'' +
 				", Modello: '" + model + '\'';
