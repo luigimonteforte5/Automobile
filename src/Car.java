@@ -1,4 +1,4 @@
-public class DefineCar {
+public class Car {
 
 	//Crea delle nuove variabili di tipo private, rendendole modificabili solo tramite i metodi setter della classe
 	private  int engSize;
@@ -6,12 +6,13 @@ public class DefineCar {
 	private  String make;
 	private  String model;
 
-	//Crea un metodo costruttore per assegnare un valore alle variabili tramite i metodi setter
-	public DefineCar(int engSize, String licPlate, String make, String model) {
-		setEngSize(engSize);
-		setLicPlate(licPlate);
-		setMake(make);
-		setModel(model);
+
+	//Crea un metodo costruttore per assegnare un valore alle variabili
+	public Car( int engSize, String licPlate, String make, String model ) {
+		this.engSize = engSize;
+		this.licPlate = licPlate;
+		this.make = make;
+		this.model = model;
 	}
 
 	//Metodo setter del parametro cilindrata
@@ -52,5 +53,17 @@ public class DefineCar {
 	//metodo setter del parametro modello
 	public void setModel( String model ) {
 		this.model = model;
+	}
+
+
+	//metodo tostring per stampare gli attributi
+	@Override
+	public String toString() {
+		return "Car{" +
+				"Cilindrata: " + engSize +
+				", Targa: '" + licPlate + '\'' +
+				", Marca: '" + make + '\'' +
+				", Modello: '" + model + '\'' +
+				'}';
 	}
 }

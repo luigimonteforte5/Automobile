@@ -1,10 +1,10 @@
 public class Main {
 	public static void main(String[] args) {
-		//Crea due nuovi oggetti car invocando il costruttore della classe DefineCar
-		DefineCar car1 = new DefineCar(2000, "AB123CD", "Volkswagen", "Golf");
-		DefineCar car2 = new DefineCar(1600, "EF456GH", "Ford", "Fiesta");
+		//Crea due nuovi oggetti car invocando il costruttore della classe Car
+		Car car1 = new Car(2000, "AB123CD", "Volkswagen", "Golf");
+		Car car2 = new Car(1600, "EF456GH", "Ford", "Fiesta");
 
-		//Stampa gli elementi degli oggetti car invocando i metodi getter della classe DefineCar
+		//Stampa gli elementi degli oggetti car invocando i metodi getter della classe Car
 		System.out.println("Auto 1");
 		System.out.println("Cilindrata: " + car1.getEngSize());
 		System.out.println("Targa: " + car1.getLicPlate());
